@@ -1,0 +1,7 @@
+{
+  "name": "spaceBurguer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
