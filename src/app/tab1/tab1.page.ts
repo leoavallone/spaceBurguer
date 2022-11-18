@@ -8,5 +8,16 @@ import { Component } from '@angular/core';
 export class Tab1Page {
 
   constructor() {}
+  preco = 0;
+  amount = 0;
 
+  incressAmount(precoProduto): void {
+    this.preco = this.preco + precoProduto;
+    this.amount = this.amount + 1;
+  }
+
+  removeAmount(precoProduto): void {
+    this.preco = this.preco - precoProduto;
+    this.amount = this.amount - 1;
+  }
 }

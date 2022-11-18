@@ -9,9 +9,53 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Cardápio</ion-title>
     </ion-toolbar>
   </ion-header>
+  <div class="foodContainer">
+    <ion-card>
+      <img alt="Silhouette of mountains" src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kfXryEgJ/200/200/original?country=br" />
+      <ion-card-header>
+        <ion-card-title>Hamburger</ion-card-title>
+        <ion-card-subtitle>R$10,00</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content class="description">
+        Um Hamburguer (100% carne bovina), cebola, picles, ketchup, mostarda e pão sem gergelim.
+      </ion-card-content>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+      <div class="actions">
+        <ion-button (click)="incressAmount(10)">
+          <ion-icon slot="icon-only" name="add"></ion-icon>
+        </ion-button>
+        <ion-input class="amountInput" value="{{amount}}" [disabled]="true"></ion-input>
+        <ion-button (click)="removeAmount(10)">
+          <ion-icon slot="icon-only" name="remove"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card>
+
+    <ion-card>
+      <img alt="Silhouette of mountains" src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXJhh6f/200/200/original?country=br" />
+      <ion-card-header>
+        <ion-card-title>Cheeseburger</ion-card-title>
+        <ion-card-subtitle>R$12,00</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content class="description">
+        Um hamburguer (100% carne bovina), queijo sabor cheddar, cebola, picles, ketchup, mostarda e pão sem gergelim.
+      </ion-card-content>
+
+      <div class="actions">
+        <ion-button (click)="incressAmount(12)">
+          <ion-icon slot="icon-only" name="add"></ion-icon>
+        </ion-button>
+        <ion-input class="amountInput" value="{{amount}}" [disabled]="true"></ion-input>
+        <ion-button (click)="removeAmount(12)">
+          <ion-icon slot="icon-only" name="remove"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card>
+  </div>
+  <h1>Total: {{preco}}</h1>
 </ion-content>

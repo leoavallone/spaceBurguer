@@ -1,0 +1,25 @@
+.foodContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.amountInput {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.description {
+    font-size: 17px;
+}
+
+.foodContainer img{
+    width: 300px;
+    min-height: 250px;
+}
