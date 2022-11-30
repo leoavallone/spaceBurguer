@@ -1,11 +1,23 @@
 .foodContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .actions {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.foodCard{
+    position: relative;
+}
+
+.actions ion-button{
+    width: 50px;
+    color: #fff;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
 }
 
 .amountInput {
@@ -23,3 +35,4 @@
     width: 300px;
     min-height: 250px;
 }
+
